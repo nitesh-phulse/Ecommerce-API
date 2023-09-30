@@ -35,14 +35,15 @@ To get started with this API, follow these steps:
 
    npm install
 
-##Configuration
+## Configuration
 1 Create a .env file in the project root:
 PORT=3000
 MONGODB_URI=mongodb://localhost:27017/ecommerce
 Modify the MONGODB_URI to match your MongoDB server configuration.
 
-##API Endpoints
-Create a Product
+### API Endpoints
+
+# Create a Product
 URL: POST /products/create
 Description: Add a new product to the inventory.
 Request Body:
@@ -52,14 +53,17 @@ JSON
   "quantity": 10
 }
 
+
+
 >Response:
   201 Created: Product created successfully.
   500 Internal Server Error: If there was an issue creating the product.
 
-##Testing the API
+
+## Testing the API
 Use a tool like Postman to test the API by sending POST requests to http://localhost:3000/products/create with the appropriate JSON payload containing the product information.
 
-Example JSON payload:
+## Example JSON payload:
 {
   "name": "Sample Product",
   "quantity": 10
